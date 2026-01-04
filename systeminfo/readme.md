@@ -11,9 +11,5 @@ This PowerShell script collects basic system information and sends it to a speci
 
 \## Usage
 ```powershell
-
-.\\script.ps1 <webhook\_url>
-
-
-
-
+.\\script.ps1 <webhook\_url
+```
